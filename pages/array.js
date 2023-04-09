@@ -1,29 +1,29 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react'
-import Pagina from '../components/Pagina'
+import { Container } from 'react-bootstrap';
+import Cabecalho from '../components/Cabecalho'
+import Pagina from '../components/Pagina';
 
 const array = () => {
 
-  const carros = [
-    'Opala',
-    'Classic',
-    'Ka',
-    'Omega',
-    'Fuscão',
-  ]
+    const carros = ['Civic', 'Tucson', 'Celta', 'Tempra', 'Marea', 'Doblo']
 
-  return (
-    <>
-      <Pagina titulo="Arrays">
+    return (
+        <>
+            <Pagina titulo="Arrays">
 
-        <ol>
-          {carros.map(item => (
-            <li>{item}</li>
-          ))}
-        </ol>
 
-      </Pagina>
-    </>
-  )
+
+                    <ol>
+                        {carros.map(item => (
+                            <li>{item}</li>
+                        ))}
+                    </ol>
+
+
+            </Pagina>
+        </>
+    )
 }
 
 export default array
